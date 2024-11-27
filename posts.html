@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Orach</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  
+  <style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Grid Container */
+    .poster-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Individual Poster Card */
+    .poster-card {
+        position: relative;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .poster-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .poster-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Poster Details Overlay */
+    .poster-details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .poster-card:hover .poster-details {
+        opacity: 1;
+    }
+
+    .poster-details h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .poster-details p {
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <a class="" href="index.html">
+              Home
+            </a>
+            <a class="" href="about.html">
+              About
+            </a>
+            <a class="" href="service.html">
+              Services
+            </a>
+            <a class="" href="officials.html">
+              Officials
+            </a>
+            <a class="active" href="posts.html">
+              Latest Posts
+            </a>
+            <a class="" href="brand.html">
+              Brand Identity
+            </a>
+            <a class="" href="contact.html">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            Orach
+          </span>
+        </a>
+        <div class="user_option">
+          <form class="form-inline">
+            <button class="btn  nav_search-btn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+          <a href="">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="name_style">
+          <h6>
+            O
+            R
+            A
+            C
+            H
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- news section -->
+
+  <section class="news_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Meet Our Latest Posts
+        </h2>
+        <p>
+          At Orach, we create engaging and visually appealing posts tailored to our clients’ needs. From social media graphics to promotional content, our posts are designed to captivate audiences and boost brand visibility
+        </p>
+      </div>
+    <div class="poster-gallery">
+        <!-- Example Poster Card -->
+        <div class="poster-card">
+            <img src="images/poster1.jpg" alt="Poster 1">
+            <div class="poster-details">
+                <h3>ADVENTURE POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster2.jpg" alt="Poster 2">
+            <div class="poster-details">
+                <h3>LEAGUE POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster3.jpg" alt="Poster 3">
+            <div class="poster-details">
+                <h3>ORGANISATION POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+                                                
+        </div>
+        <div class="poster-card">
+            <img src="images/poster4.jpg" alt="Poster 1">
+            <div class="poster-details">
+                <h3>SPORTS POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster5.jpg" alt="Poster 2">
+            <div class="poster-details">
+                <h3>SCHOOL POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster6.jpg" alt="Poster 3">
+            <div class="poster-details">
+                <h3>JUBILLE POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+                                                
+        </div>
+        <div class="poster-card">
+            <img src="images/poster7.jpg" alt="Poster 1">
+            <div class="poster-details">
+                <h3>HOLIDAY POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster8.jpg" alt="Poster 2">
+            <div class="poster-details">
+                <h3>MANIPULATION POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster9.jpg" alt="Poster 3">
+            <div class="poster-details">
+                <h3>SOCIAL MEDIA POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+                                                
+        </div>
+        <div class="poster-card">
+            <img src="images/poster10.jpg" alt="Poster 1">
+            <div class="poster-details">
+                <h3>SOCIAL POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster11.jpg" alt="Poster 2">
+            <div class="poster-details">
+                <h3>SOCIAL POSTS BRANDING</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster12.jpg" alt="Poster 3">
+            <div class="poster-details">
+                <h3>COMPETITION POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+                                                
+        </div>
+        <div class="poster-card">
+            <img src="images/poster13.jpg" alt="Poster 1">
+            <div class="poster-details">
+                <h3>AEROBICS AND PHYSICAL POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster14.jpg" alt="Poster 2">
+            <div class="poster-details">
+                <h3>HOST 3D POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+        </div>
+        <div class="poster-card">
+            <img src="images/poster15.jpg" alt="Poster 3">
+            <div class="poster-details">
+                <h3>SHOPPING AND SHIPPING POSTS</h3>
+                <p>ORACH GRAPHICS</p>
+            </div>
+                                                
+        </div>
+        <!-- Add more posters as needed -->
+    </div>
+            <div class="btn-box">
+              <a href="contact.html">
+                Book Yours Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end news section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="tel:+256752498989">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +256752498989
+                </span>
+              </a>
+              <a href="mailto:Orachway36@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  Orachway36@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="https://www.facebook.com/orach256/" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/orachway" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://youtube.com/@orachgraphics?si=-Hpe0b7M8RN_SGtd" target="_blank" class="youtube-button">
+              <span class="icon"></span>
+            <a href="https://www.instagram.com/orachgraphics/profilecard/?igsh=MXU3cmF2YmR3d3cxaQ==" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="" href="about.html">
+                <img src="images/nav-bullet.png" alt="">
+                About
+              </a>
+              <a class="" href="service.html">
+                <img src="images/nav-bullet.png" alt="">
+                Services
+              </a>
+              <a class="" href="officials.html">
+                <img src="images/nav-bullet.png" alt="">
+                Officials
+              </a>
+              <a class="" href="posts.html">
+                <img src="images/nav-bullet.png" alt="">
+                Latest Posts
+              </a>
+              <a class="" href="contact.html">
+                <img src="images/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              YOU CAN BECOME OUR LIFE TIME CLIENT BY JUST SUBSCRIBING TO OUR WEBSITE PLANS AND YOU DON'T REQUIRE MONEY.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved by Orach. Design by
+            <a href="omunenevevo.github.io/ug/">Genius Developers Uganda</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</html>
